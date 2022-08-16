@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "CARVsTuBeMt+2duyGkRO46nzcu1qPwPH3jOSP9JQL+kqthZ6Q2sFGWVPvN05VJEzZvnvyFPhvhAl8pcc+OgoXA==",
+  "success": true,
+  "projectFilePath": "/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Domain/Globo.PIC.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/marcioamandy/.nuget/packages/mediatr/8.1.0/mediatr.8.1.0.nupkg.sha512",
+    "/Users/marcioamandy/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/8.1.0/mediatr.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
+    "/Users/marcioamandy/.nuget/packages/microsoft.aspnetcore.authorization/3.1.8/microsoft.aspnetcore.authorization.3.1.8.nupkg.sha512",
+    "/Users/marcioamandy/.nuget/packages/microsoft.aspnetcore.metadata/3.1.8/microsoft.aspnetcore.metadata.3.1.8.nupkg.sha512",
+    "/Users/marcioamandy/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/marcioamandy/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.8/microsoft.extensions.dependencyinjection.abstractions.3.1.8.nupkg.sha512",
+    "/Users/marcioamandy/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.8/microsoft.extensions.logging.abstractions.3.1.8.nupkg.sha512",
+    "/Users/marcioamandy/.nuget/packages/microsoft.extensions.options/3.1.8/microsoft.extensions.options.3.1.8.nupkg.sha512",
+    "/Users/marcioamandy/.nuget/packages/microsoft.extensions.primitives/3.1.8/microsoft.extensions.primitives.3.1.8.nupkg.sha512",
+    "/Users/marcioamandy/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.7.1/microsoft.identitymodel.jsonwebtokens.6.7.1.nupkg.sha512",
+    "/Users/marcioamandy/.nuget/packages/microsoft.identitymodel.logging/6.7.1/microsoft.identitymodel.logging.6.7.1.nupkg.sha512",
+    "/Users/marcioamandy/.nuget/packages/microsoft.identitymodel.tokens/6.7.1/microsoft.identitymodel.tokens.6.7.1.nupkg.sha512",
+    "/Users/marcioamandy/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/Users/marcioamandy/.nuget/packages/system.identitymodel.tokens.jwt/6.7.1/system.identitymodel.tokens.jwt.6.7.1.nupkg.sha512",
+    "/Users/marcioamandy/.nuget/packages/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

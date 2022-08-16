@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = Globo.PIC.Application.Veiculo
+build_property.ProjectDir = /Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Application.Veiculos/

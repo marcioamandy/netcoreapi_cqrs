@@ -1,0 +1,318 @@
+{
+  "format": 1,
+  "restore": {
+    "/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Application/Globo.PIC.Application.csproj": {}
+  },
+  "projects": {
+    "/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Application/Globo.PIC.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Application/Globo.PIC.Application.csproj",
+        "projectName": "Globo.PIC.Application",
+        "projectPath": "/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Application/Globo.PIC.Application.csproj",
+        "packagesPath": "/Users/marcioamandy/.nuget/packages/",
+        "outputPath": "/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Application/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/marcioamandy/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Domain/Globo.PIC.Domain.csproj": {
+                "projectPath": "/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Domain/Globo.PIC.Domain.csproj"
+              },
+              "/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/Globo.PIC.Infra.csproj": {
+                "projectPath": "/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/Globo.PIC.Infra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AMQPNetLite.Core": {
+              "target": "Package",
+              "version": "[2.4.3, )"
+            },
+            "AWSSDK.Core": {
+              "target": "Package",
+              "version": "[3.7.5.8, )"
+            },
+            "AWSSDK.SQS": {
+              "target": "Package",
+              "version": "[3.7.2.6, )"
+            },
+            "AWSSDK.SimpleNotificationService": {
+              "target": "Package",
+              "version": "[3.7.3.9, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Domain/Globo.PIC.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Domain/Globo.PIC.Domain.csproj",
+        "projectName": "Globo.PIC.Domain",
+        "projectPath": "/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Domain/Globo.PIC.Domain.csproj",
+        "packagesPath": "/Users/marcioamandy/.nuget/packages/",
+        "outputPath": "/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/marcioamandy/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.7.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/Globo.PIC.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/Globo.PIC.Infra.csproj",
+        "projectName": "Globo.PIC.Infra",
+        "projectPath": "/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/Globo.PIC.Infra.csproj",
+        "packagesPath": "/Users/marcioamandy/.nuget/packages/",
+        "outputPath": "/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/marcioamandy/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Domain/Globo.PIC.Domain.csproj": {
+                "projectPath": "/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Domain/Globo.PIC.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AWSSDK.Extensions.NETCore.Setup": {
+              "target": "Package",
+              "version": "[3.7.1, )"
+            },
+            "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[3.7.7.5, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "Dapper.Contrib": {
+              "target": "Package",
+              "version": "[2.0.35, )"
+            },
+            "Dapper.FluentMap.Dommel": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.7.25, )"
+            },
+            "Hangfire.MySqlStorage": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Novell.Directory.Ldap.NETStandard": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Z.Dapper.Plus": {
+              "target": "Package",
+              "version": "[3.0.36, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

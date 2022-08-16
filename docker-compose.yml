@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  tvglobo.r2p.parceria.api:
+    image: ${DOCKER_REGISTRY-}tvglobor2pparceriaapi
+    build:
+      context: .
+      dockerfile: TVGlobo.R2P.Parceria.API/Dockerfile

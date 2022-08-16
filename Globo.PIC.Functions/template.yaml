@@ -1,0 +1,119 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Stack serverless PIC.
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 900
+
+Resources:
+  GetUserHandler:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: ./
+      Handler: Globo.PIC.Functions::Globo.PIC.Functions.handlers.UserFunctions::GetUserHandler
+      Runtime: dotnetcore3.1
+      Role: 'arn:aws:iam::874081334926:role/Entretenimento-LambdaAppRole'     
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-0d2044aee655a5207
+        SubnetIds:
+          - subnet-0ff2bc733fecadeff
+          - subnet-08599ee43506b0d4e 
+      Environment: # More info about Env Vars: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#environment-object
+        Variables:
+          AD_DOMAIN: "corp.tvglobo.com.br"
+          AD_USERNAME: "sglservice"
+          AD_PASSWORD: "*NA36A2KiBRViVN"
+      Events:
+        HelloWorld:
+          Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+          Properties:
+            Path: /hello
+            Method: get
+
+  SyncProjetoCadprogHandler:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: ./
+      Handler: Globo.PIC.Functions::Globo.PIC.Functions.handlers.ProjetoFunctions::SyncProjetoCadprogHandler
+      Runtime: dotnetcore3.1
+      Role: 'arn:aws:iam::874081334926:role/Entretenimento-LambdaAppRole'     
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-0d2044aee655a5207
+        SubnetIds:
+          - subnet-0ff2bc733fecadeff
+          - subnet-08599ee43506b0d4e 
+      Environment:
+        Variables:
+          CONNECTIONSTRING: "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.214.2.5)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=PJORAH01)));User Id=qad;Password=qadqadqad;"
+          # CONNECTIONSTRING: "User Id=qad;Password=qadqadqad;Data Source=clhaorasr002:1521/PJORAH01;Connection Timeout=120;"
+      Events:
+        SNSEvent:
+          Type: SNS
+          Properties:
+            Topic: arn:aws:sns:us-east-1:874081334926:Globo-PIC-Projeto-Topico
+
+  SyncTarefaCadprogHandler:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: ./
+      Handler: Globo.PIC.Functions::Globo.PIC.Functions.handlers.TarefaFunctions::SyncTarefaCadprogHandler
+      Runtime: dotnetcore3.1
+      Role: 'arn:aws:iam::874081334926:role/Entretenimento-LambdaAppRole'     
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-0d2044aee655a5207
+        SubnetIds:
+          - subnet-0ff2bc733fecadeff
+          - subnet-08599ee43506b0d4e 
+      Environment:
+        Variables:
+          CONNECTIONSTRING: "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.214.2.5)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=PJORAH01)));User Id=qad;Password=qadqadqad;"
+          # CONNECTIONSTRING: "User Id=qad;Password=qadqadqad;Data Source=clhaorasr002:1521/PJORAH01;Connection Timeout=120;"
+      Events:
+        SNSEvent:
+          Type: SNS
+          Properties:
+            Topic: arn:aws:sns:us-east-1:874081334926:Globo-PIC-Tarefa-Topico
+
+  GetUserADHandler:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: ./
+      Handler: Globo.PIC.Functions::Globo.PIC.Functions.handlers.UserFunctions::GetUserADHandler
+      Runtime: dotnetcore3.1
+      Role: 'arn:aws:iam::874081334926:role/Entretenimento-LambdaAppRole'     
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-0d2044aee655a5207
+        SubnetIds:
+          - subnet-0ff2bc733fecadeff
+          - subnet-08599ee43506b0d4e 
+      Environment: # More info about Env Vars: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#environment-object
+        Variables:
+          AD_DOMAIN: "corp.tvglobo.com.br"
+          AD_USERNAME: "sglservice"
+          AD_PASSWORD: "*NA36A2KiBRViVN"
+          SQS_QUEUE_USUARIO: "https://sqs.us-east-1.amazonaws.com/874081334926/Globo-PIC-Usuario-SQS"
+          
+      Events:
+        SQSEvent:
+          Type: SQS
+          Properties:
+            Queue: arn:aws:sqs:us-east-1:874081334926:Globo-PIC-UsuarioSyncAD-SQS
+
+
+Outputs:
+  # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
+  # Find out more about other implicit resources you can reference within SAM
+  # https://github.com/awslabs/serverless-application-model/blob/master/docs/internals/generated_resources.rst#api
+  GetUserApi:
+    Description: "API Gateway endpoint URL for Prod stage for GetUserADHandler"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/"
+  GetUserADHandler:
+    Description: "GetUserADHandler ARN"
+    Value: !GetAtt GetUserADHandler.Arn

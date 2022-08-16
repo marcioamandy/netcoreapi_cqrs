@@ -1,0 +1,22 @@
+FROM mcr.microsoft.com/dotnet/core/runtime:3.1 AS base
+WORKDIR /app
+EXPOSE 80
+
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
+WORKDIR /src
+COPY Globo.PIC.API/Globo.PIC.API.csproj Globo.PIC.API/
+COPY Globo.PIC.Infra/Globo.PIC.Infra.csproj Globo.PIC.Infra/
+COPY Globo.PIC.Domain/Globo.PIC.Domain.csproj Globo.PIC.Domain/
+COPY Globo.PIC.Application/Globo.PIC.Application.csproj Globo.PIC.Application/
+RUN dotnet restore Globo.PIC.API/Globo.PIC.API.csproj
+COPY . .
+WORKDIR /src/Globo.PIC.API
+RUN dotnet build Globo.PIC.API.csproj -c Release -o /app
+
+FROM build AS publish
+RUN dotnet publish Globo.PIC.API.csproj -c Release -o /app
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app .
+ENTRYPOINT ["dotnet", "Globo.PIC.API.dll"]

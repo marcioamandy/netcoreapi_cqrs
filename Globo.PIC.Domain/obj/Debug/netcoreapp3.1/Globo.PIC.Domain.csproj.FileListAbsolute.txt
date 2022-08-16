@@ -1,0 +1,10 @@
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Domain/bin/Debug/netcoreapp3.1/Globo.PIC.Domain.deps.json
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Domain/bin/Debug/netcoreapp3.1/Globo.PIC.Domain.dll
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Domain/bin/Debug/netcoreapp3.1/Globo.PIC.Domain.pdb
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Domain/obj/Debug/netcoreapp3.1/Globo.PIC.Domain.csproj.AssemblyReference.cache
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Domain/obj/Debug/netcoreapp3.1/Globo.PIC.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Domain/obj/Debug/netcoreapp3.1/Globo.PIC.Domain.AssemblyInfoInputs.cache
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Domain/obj/Debug/netcoreapp3.1/Globo.PIC.Domain.AssemblyInfo.cs
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Domain/obj/Debug/netcoreapp3.1/Globo.PIC.Domain.csproj.CoreCompileInputs.cache
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Domain/obj/Debug/netcoreapp3.1/Globo.PIC.Domain.dll
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Domain/obj/Debug/netcoreapp3.1/Globo.PIC.Domain.pdb

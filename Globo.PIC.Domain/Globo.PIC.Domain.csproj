@@ -1,0 +1,75 @@
+<Project Sdk="Microsoft.NET.Sdk"> 
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="3.1.8" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.7.1" />
+  </ItemGroup>
+
+   <ItemGroup>
+    <Folder Include="Types\Queries\Statistics\" />
+    <Folder Include="Models\Functions\" />
+    <Folder Include="Models\Cadprog\" />
+  </ItemGroup>
+
+   <ItemGroup>
+     <None Remove="Models\Lambda\" />
+     <None Remove="Types\Commands\" />
+     <None Remove="Types\Events\" />
+     <None Remove="Models\Cadprog\" />
+   </ItemGroup>
+   <ItemGroup>
+     <Compile Remove="Entities\PedidoItemArteAnexos.cs" />
+     <Compile Remove="Entities\PedidoItemVeiculoAnexos.cs" />
+     <Compile Remove="Models\UnidadeNegocio.cs" />
+     <Compile Remove="Types\Commands\CheckStatusChanged.cs" />
+     <Compile Remove="Types\Commands\CreatePedidoItemConversa.cs" />
+     <Compile Remove="Types\Commands\AddTrackingVeiculos.cs" />
+     <Compile Remove="Types\Commands\SavePedidoItemDevolucao.cs" />
+     <Compile Remove="Types\Commands\UpdateUser.cs" />
+     <Compile Remove="Types\Commands\SaveConteudo.cs" />
+     <Compile Remove="Types\Commands\DeletePedidoItemDevolucao.cs" />
+     <Compile Remove="Types\Commands\UpdatePedidoStatus.cs" />
+     <Compile Remove="Types\Commands\UpdatePedidoItemAnexos.cs" />
+     <Compile Remove="Types\Commands\SavePedido.cs" />
+     <Compile Remove="Types\Commands\UpdateUserRole.cs" />
+     <Compile Remove="Types\Commands\DeletePedidoItemAnexo.cs" />
+     <Compile Remove="Types\Commands\DeleteUserRole.cs" />
+     <Compile Remove="Types\Commands\UpdatePedidoItensDevolucao.cs" />
+     <Compile Remove="Types\Commands\UpdatePedidoItemAnexo.cs" />
+     <Compile Remove="Types\Commands\UpdatePedidoDevolucao.cs" />
+     <Compile Remove="Types\Commands\SaveUserRole.cs" />
+     <Compile Remove="Types\Commands\DeletePedidoItemAnexos.cs" />
+     <Compile Remove="Types\Commands\UpdateUserRoles.cs" />
+     <Compile Remove="Types\Commands\SaveViewer.cs" />
+     <Compile Remove="Types\Events\OnVerificarStatusHF.cs" />
+     <Compile Remove="Types\Events\OnDailySchedule.cs" />
+     <Compile Remove="Types\Events\OnLogon.cs" />
+     <Compile Remove="Types\Queries\GetRolesByLogin.cs" />
+     <Compile Remove="Types\Queries\ListByIdPedidoItemAnexo.cs" />
+     <Compile Remove="Types\Queries\ListByIdPedidoItemDevolucao.cs" />
+     <Compile Remove="Types\Queries\ListByIdPedidoItemOriginalDevolucao.cs" />
+     <Compile Remove="Types\Queries\ListItemCompraDocumentosAnexosIdByIdPedidoItemCompra.cs" />
+     <Compile Remove="Types\Queries\GetAll.cs" />
+     <Compile Remove="Types\Queries\GetByIdPedidoItem.cs" />
+     <Compile Remove="Types\Queries\GetByIdPedidoItemAnexo.cs" />
+     <Compile Remove="Types\Queries\GetByIdPedidoItemDevolucao.cs" />
+     <Compile Remove="Types\Queries\GetByIdPedidoItemExistDevolucao.cs" />
+     <Compile Remove="Types\Queries\GetByIdPedidoItemModel.cs" />
+     <Compile Remove="Types\Queries\GetByIds.cs" />
+     <Compile Remove="Types\Queries\GetByPedidoFilterCount.cs" />
+     <Compile Remove="Types\Queries\GetByPedidoItemConversaFilter.cs" />
+     <Compile Remove="Types\Queries\GetByPedidoItemConversaFilterCount.cs" />
+     <Compile Remove="Types\Queries\GetByPedidoItemConversaId.cs" />
+     <Compile Remove="Types\Queries\GetByPedidoItemId.cs" />
+     <Compile Remove="Types\Queries\GetBySearch.cs" />
+     <Compile Remove="Types\Queries\GetBySortNivelFilter.cs" />
+     <Compile Remove="Types\Commands\CreatepedidoItemVeiculo.cs" />
+   </ItemGroup>
+</Project>

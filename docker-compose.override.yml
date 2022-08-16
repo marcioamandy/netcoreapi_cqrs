@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  tvglobo.r2p.parceria.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Local
+    ports:
+      - "80"

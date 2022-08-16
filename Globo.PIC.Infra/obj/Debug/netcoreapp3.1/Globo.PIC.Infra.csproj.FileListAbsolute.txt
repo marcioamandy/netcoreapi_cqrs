@@ -1,0 +1,16 @@
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/bin/Debug/netcoreapp3.1/Globo.PIC.Infra.deps.json
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/bin/Debug/netcoreapp3.1/Globo.PIC.Infra.runtimeconfig.json
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/bin/Debug/netcoreapp3.1/Globo.PIC.Infra.runtimeconfig.dev.json
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/bin/Debug/netcoreapp3.1/Globo.PIC.Infra.dll
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/bin/Debug/netcoreapp3.1/Globo.PIC.Infra.pdb
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/bin/Debug/netcoreapp3.1/Globo.PIC.Domain.dll
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/bin/Debug/netcoreapp3.1/Globo.PIC.Domain.pdb
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/obj/Debug/netcoreapp3.1/Globo.PIC.Infra.csproj.AssemblyReference.cache
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/obj/Debug/netcoreapp3.1/Globo.PIC.Infra.GeneratedMSBuildEditorConfig.editorconfig
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/obj/Debug/netcoreapp3.1/Globo.PIC.Infra.AssemblyInfoInputs.cache
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/obj/Debug/netcoreapp3.1/Globo.PIC.Infra.AssemblyInfo.cs
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/obj/Debug/netcoreapp3.1/Globo.PIC.Infra.csproj.CoreCompileInputs.cache
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/obj/Debug/netcoreapp3.1/Globo.PIC.Infra.csproj.CopyComplete
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/obj/Debug/netcoreapp3.1/Globo.PIC.Infra.dll
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/obj/Debug/netcoreapp3.1/Globo.PIC.Infra.pdb
+/Applications/XAMPP/xamppfiles/htdocs/Globo/PIC/pic-service/src/Globo.PIC.Infra/obj/Debug/netcoreapp3.1/Globo.PIC.Infra.genruntimeconfig.cache

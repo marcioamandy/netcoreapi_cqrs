@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="CommandHandlers\PedidoAnexosCommandHandler.cs" />
+    <Compile Remove="CommandHandlers\PedidoVeiculosItemCommandHandler.cs" />
+    <Compile Remove="CommandHandlers\PedidoVeiculosItemTratativeCommandHandler.cs" />
+    <Compile Remove="CommandHandlers\PedidoVeiculosItemDocumentosAnexosCommandHandler.cs" />
+    <Compile Remove="CommandHandlers\PedidoVeiculosItemAnexosCommandHandler.cs" />
+    <Compile Remove="CommandHandlers\PedidoVeiculosItemDocumentosCommandHandler.cs" />
+    <Compile Remove="CommandHandlers\PedidoVeiculosItemEntregaCommandHandler.cs" />
+    <Compile Remove="EventHandlers\ScheduleEventHandler.cs" />
+    <Compile Remove="QueryHandlers\ConteudoQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\CategoriaQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\CatalogoItemQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\PedidoQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\NotificacaoQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\PedidoItemCompraDocumentosQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\PedidoItemConversaQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\ProjetoQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\StatusItemQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\TrackingQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\PedidoEquipeQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\PedidoItemEntregaQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\DomainQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\UserQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\NivelQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\PedidoAnexosQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\PedidoItemConversaAnexosQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\StatusQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\PedidoItemAnexosQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\UserRoleQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\PedidoItemCompraDocumentosAnexosQueryHandler.cs" />
+    <Compile Remove="QueryHandlers\PedidoItemCompraQueryHandler.cs" />
+    <Compile Remove="EventHandlers\EventHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Globo.PIC.Domain\Globo.PIC.Domain.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Globo.PIC.Infra\Globo.PIC.Infra.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

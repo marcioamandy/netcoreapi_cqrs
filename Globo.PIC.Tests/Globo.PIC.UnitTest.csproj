@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <StartupObject></StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="API\**" />
+    <Compile Remove="Application\**" />
+    <Compile Remove="Infra\**" />
+    <EmbeddedResource Remove="API\**" />
+    <EmbeddedResource Remove="Application\**" />
+    <EmbeddedResource Remove="Infra\**" />
+    <None Remove="API\**" />
+    <None Remove="Application\**" />
+    <None Remove="Infra\**" />
+    <None Remove="AWSSDK.Core" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="3.1.8" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+    <PackageReference Include="MockQueryable.Moq" Version="3.1.3" />
+    <PackageReference Include="Moq" Version="4.14.5" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="AWSSDK.Core" Version="3.7.5.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Application\Services\Query\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Globo.PIC.Application\Globo.PIC.Application.csproj" />
+    <ProjectReference Include="..\Globo.PIC.Domain\Globo.PIC.Domain.csproj" />
+    <ProjectReference Include="..\Globo.PIC.Infra\Globo.PIC.Infra.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criação de RC</title>
+    <style type="text/css">
+        @import url('https://pic-resources-assets.s3.amazonaws.com/emails/fonts/GloboRegular.ttf');
+    </style>
+</head>
+<body style="margin: 0 auto; padding: 0">
+    <center>
+        <table bgcolor="#FFFFFF"
+               align="center" 
+               border="0"
+               cellpadding="0"
+               cellspacing="0"
+               borderspacing="0"
+               width="600">
+            <tr height="30">
+                <td colspan="3"> </td>
+            </tr>
+            <tr>
+                <td width="50"></td>
+                <td align="center" width="500">
+                    <img width="143"
+                         height="50"
+                         style="display: block; margin: 0; width: 143px; height: 50px"
+                         src="https://pic-resources-assets.s3.amazonaws.com/emails/images/logo.png"
+                         alt="logo pic" />
+                </td>
+                <td width="50"></td>
+            </tr>
+            <tr height="65">
+                <td colspan="3"> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center">
+                    <table bgcolor="#FAFAFA"
+                           align="center"
+                           border="0"
+                           cellpadding="0"
+                           cellspacing="0"
+                           borderspacing="0"
+                           width="500">
+                        <tr height="35">
+                            <td colspan="3"> </td>
+                        </tr>
+                        <tr>
+                            <td width="20"></td>
+                            <td>
+                                <p style="display: block; margin: 0; font-family: 'GloboRegular', Helvetica, Aria, sans-serif; color: black; font-size: 14px;">
+                                    {{conteudo_email}}
+                                </p> 
+                            </td>
+                            <td width="20"></td>
+                        </tr>
+                        <tr height="35">
+                            <td colspan="3"> </td>
+                        </tr>
+                    </table>
+                </td>
+                <td></td>
+            </tr>
+            <tr height="30">
+                <td colspan="3"></td>
+            </tr>
+            <tr height="36">
+                <td></td>
+                <td height="36">
+                    <table bgcolor="##009CDD"
+                           align="center"
+                           border="0"
+                           cellpadding="0"
+                           cellspacing="0"
+                           borderspacing="0"
+                           width="160"
+                           height="36"
+                           style="border-radius: 3px">
+                        <tr height="36">
+                            <td height="36" align="center" style="text-align: center">
+                                <p style="display: block; margin: 0; font-family: 'GloboRegular', Helvetica, Aria, sans-serif; color: white; font-size: 14px;">
+                                    <strong>
+                                        <a href="{{LINK_ACTION}}" target="_blank" style="text-transform: uppercase; font-weight: 600; font-size: 14px; font-family: Helvetica, Arial, sans-serif; color: white; text-decoration: none; text-decoration: none;border-radius: 3px; padding: 7px 35px; border: 1px solid #009cdd; display: inline-block;background-color:#009cdd;"><strong style="text-decoration:none;">{{LINK_TEXT}}</strong></a>
+                                    </strong>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td></td>
+            </tr>
+            <tr height="300">
+                <td colspan="3"> </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

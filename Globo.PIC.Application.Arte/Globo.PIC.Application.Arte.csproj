@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Globo.PIC.Domain\Globo.PIC.Domain.csproj" />
+    <ProjectReference Include="..\Globo.PIC.Infra\Globo.PIC.Infra.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="CommandHandlers\PedidoItemConversaCommandHandler.cs" />
+    <Compile Remove="CommandHandlers\PedidoItemAnexosCommandHandler.cs" />
+    <Compile Remove="CommandHandlers\PedidoItemConversaAnexosCommandHandler.cs" />
+    <Compile Remove="CommandHandlers\PedidoEquipeCommandHandler.cs" />
+    <Compile Remove="CommandHandlers\UserCommandHandler.cs" />
+    <Compile Remove="CommandHandlers\PedidoAnexosCommandHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="CommandHandlers\" />
+    <None Remove="EventHandler\" />
+    <None Remove="QueryHandlers\" />
+    <None Remove="AutoMapper\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EventHandlers\" />
+    <Folder Include="AutoMapper\" />
+  </ItemGroup>
+</Project>
